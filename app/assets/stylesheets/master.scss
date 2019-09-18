@@ -82,3 +82,10 @@ body {
     height: 1%; }
   *:first-child + html .pagination {
     overflow: hidden; }
+
+.invalid-feedback {
+  color: #ff3333;
+  background-color: #FEEEEE;
+  border-radius: 3px;
+  padding: 2px 8px 2px 8px;
+}
