@@ -149,8 +149,10 @@
   <% @place.photos.each do |photo| %>
     <div class="col-12 col-sm-6">
       <blockquote>
-          <%= image_tag 'photo.picture.to_s', class: 'img-fluid' %>
+        <% if photo.picture.present? %>
+          <%= image_tag 'photo.picture.url', class: 'img-fluid' %>
           <b><%= photo.caption %></b>
+        <% end %>
       </blockquote>
     </div>
   <% end %>
