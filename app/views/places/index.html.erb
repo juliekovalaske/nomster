@@ -25,7 +25,7 @@
     <div class="col-12 col-sm-6">
       <blockquote>
         <% if place.photos.last.present? %>
-          <b><%= place.photos.last %></b>
+          <%= image_tag place.photos.last.picture.to_s, class: 'index-image-size' %>
         <% end %>
           <%= place.photos.last.caption %>
           <small><<%= place.photos.last.user.email %></small>
